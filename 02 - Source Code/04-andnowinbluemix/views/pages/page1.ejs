@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>First Application - GET and POST communication - Paris Dauphine - Emerging Technologies </title>
+</head>
+<body>
+  <h1>First Application - GET and POST communication</h1>
+
+  <div>
+    <form action="/page1/book/add/" method="post">
+      Author: <input type="text" name="authorname" id="authorname" required /></br>
+      Biography: <textarea name="authorbio" id="authorbio"></textarea></br>
+      Quote: <textarea name="authorquote" id="authorquote"></textarea></br>
+      Book title: <input type="text" name="booktitle" id="booktitle" required /></br>
+      Publication Date <input type="date" name="bookpubdate" id="bookpubdate" required /></br>
+      Summary:  <textarea name="booksummary" id="booksummary"></textarea></br>
+      <input type="submit" value='Save'>
+    </form>
+  </div>
+
+  <b>The Book List </b>
+  <ul>
+    <% profileslist.forEach(function(profile, index) { %>
+      <li>
+        <a href="/page1/book/remove/<%= index %>">Remove</a>
+        <b> <%= profile.authorname %> </b>
+        <%= profile.booktitle %> [<%= profile.bookpubdate %>]
+      </li>
+      <% }); %>
+    </ul>
+
+    <%- include ../partial/footer %>
+    <%- include ../partial/description %>
+  </body>
+  </html>

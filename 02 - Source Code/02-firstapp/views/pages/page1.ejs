@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>First Application - GET and POST communication - Paris Dauphine - Emerging Technologies </title>
+</head>
+<body>
+  <h1>First Application - GET and POST communication</h1>
+
+  <form action="/page1/profile/add/" method="post">
+    <div>
+      <Label> My name : </label><input type="text" name="myname" id="myname"   value='<%= myname %>' />
+      </div>
+      <div>
+        <label for="Profil">My profile: </label>
+        <textarea name="myprofile" id="myprofile"><%= myprofile %></textarea>
+      </div>
+      <input type="submit" value='Save'>
+    </form>
+    <%- include ../partial/footer %>
+    <%- include ../partial/description %>
+  </body>
+  </html>

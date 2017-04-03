@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="/stylesheets/style.css">
+</head>
+<body>
+  <h1>Library Book list - Book details <a class='action' href="/">back</a></h1>
+
+  <div class='half' >
+    <h2> <%= booklist.authorname %></h2>
+    <%= booklist.authorbio %>
+    <blockquote><%= booklist.authorquote %>    </blockquote>
+
+    <h3><%= booklist.booktitle %> </h3>
+    <b>Publication Date :</b> <%= booklist.bookpubdate %>
+    <div>  <%= booklist.booksummary %></div>
+  </div>
+  <div class='half' >
+  </div>
+
+  <div class='full'>
+    <%- include ../partial/footer %>
+    <%- include ../partial/description %>
+  </div>
+</body>
+</html>

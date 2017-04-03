@@ -1,0 +1,148 @@
+/* style.css
+* This file provides css styles.
+*/
+
+body,html {
+	background-color: #3b4b54;
+
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+	color: #ffffff;
+}
+
+h1 {
+	font-weight: bold;
+	font-size: 2em;
+}
+
+input
+{
+	width: 90%;
+}
+
+textarea
+{
+	width: 90%;
+	height : 100px;
+}
+
+label
+{
+	display: block;
+	width: 150px;
+}
+/*
+* Standard link : Open a specific book in the main page for example
+*/
+a {
+	text-decoration: none;
+	color: #00aed1;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+/*
+* Button-like link : action link in the pages ; Remove, back button
+*/
+
+a.action {
+	font-family: Arial;
+	font-size: 10px;
+	padding: 1px 2px 1px 2px;
+	color: #3cb0fd;
+	border-color:#3b4b54;
+	border-style: solid;
+	border-width: 1px;
+}
+
+a.action:hover {
+	color: #3b4b54;
+	border-color:#3cb0fd;
+	background-color:#3cb0fd;
+	border-style: solid;
+	border-width: 1px;
+}
+
+/*
+* DIV organisation : 3-Columns-style for translation page, 2columns style for the main page
+*/
+
+.half
+{
+	width: 45%;
+	padding: 10px 10px 10px 10px;
+	float:left;
+}
+.full
+{
+	width: 90%;
+	float:left;
+}
+.languagedetection
+{
+	color: #5aaafa;
+	width: 10%;
+	padding: 10px 10px 10px 10px;
+	border-width: 10px;
+	float:left;
+}
+
+.original
+{
+	width: 40%;
+	padding: 10px 10px 10px 10px;
+	float:left;
+}
+
+.translation
+{
+	padding: 10px 10px 10px 10px;
+	width: 40%;
+	float:left;
+	background-color: #313f4a;
+}
+
+/*
+* Button : Button in form : "Save" in the main page
+*/
+.btn {
+	background: #3498db;
+	background-image: -webkit-linear-gradient(top, #3498db, #2980b9);
+	background-image: -moz-linear-gradient(top, #3498db, #2980b9);
+	background-image: -ms-linear-gradient(top, #3498db, #2980b9);
+	background-image: -o-linear-gradient(top, #3498db, #2980b9);
+	background-image: linear-gradient(to bottom, #3498db, #2980b9);
+	font-family: Arial;
+	color: #ffffff;
+	font-size: 12px;
+	padding: 10px 20px 10px 20px;
+	text-decoration: none;
+	border:none;
+	width : 100px;
+
+}
+
+.btn:hover {
+	background: #3cb0fd;
+	background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
+	background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
+	background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
+	background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
+	background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+	text-decoration: none;
+
+}
+
+/*
+* Footer : Style for the footer
+*/
+.footer
+{
+	width: 90%;
+	border:0px;
+	border-top: 1px;
+	border-style: solid;
+	margin: 10px 10px 10px 10px;
+	float:left;
+}
